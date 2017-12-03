@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const config = {
-  entry: './src/js/index.js',
+  entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'app.js'
@@ -29,7 +29,7 @@ const config = {
         ]
       },
       {
-        test: /\.(json|png)$/,
+        test: /\.(png)$/,
         use: 'file-loader?name=[name].[ext]'
       },
       {
